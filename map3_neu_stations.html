@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d970aa05012035408137d846a5df70f8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+             <h3 align="center" style="font-size:16px"><b>Blue Bikes Stations Around Northeastern University</b></h3>
+             
+    
+            <div class="folium-map" id="map_d970aa05012035408137d846a5df70f8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d970aa05012035408137d846a5df70f8 = L.map(
+                "map_d970aa05012035408137d846a5df70f8",
+                {
+                    center: [42.3398, -71.089],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e82049c167abbca780d26aadf95340c6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d970aa05012035408137d846a5df70f8);
+        
+    
+            var marker_c6ffceb271890135af403e694acf10db = L.marker(
+                [42.33624444796878, -71.08798563480377],
+                {}
+            ).addTo(map_d970aa05012035408137d846a5df70f8);
+        
+    
+            marker_c6ffceb271890135af403e694acf10db.bindTooltip(
+                `<div>
+                     Ruggles T Stop - Columbus Ave at Melnea Cass Blvd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9832c1e003ce67fa5b28d3512ecb9ddf = L.marker(
+                [42.338431795290944, -71.08169049924982],
+                {}
+            ).addTo(map_d970aa05012035408137d846a5df70f8);
+        
+    
+            marker_9832c1e003ce67fa5b28d3512ecb9ddf.bindTooltip(
+                `<div>
+                     Tremont St at Northampton St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_60023fa8f3a781304676c822893d3ca3 = L.marker(
+                [42.33889559644165, -71.08149975611013],
+                {}
+            ).addTo(map_d970aa05012035408137d846a5df70f8);
+        
+    
+            marker_60023fa8f3a781304676c822893d3ca3.bindTooltip(
+                `<div>
+                     Tremont St at Northampton St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8105d71146be9efcef5553057df21f25 = L.marker(
+                [42.339202, -71.090511],
+                {}
+            ).addTo(map_d970aa05012035408137d846a5df70f8);
+        
+    
+            marker_8105d71146be9efcef5553057df21f25.bindTooltip(
+                `<div>
+                     Forsyth St at Huntington Ave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_16c9e9f0c808d788056c85f34160fbaf = L.marker(
+                [42.34135615767354, -71.08336953450817],
+                {}
+            ).addTo(map_d970aa05012035408137d846a5df70f8);
+        
+    
+            marker_16c9e9f0c808d788056c85f34160fbaf.bindTooltip(
+                `<div>
+                     Mass Ave T Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

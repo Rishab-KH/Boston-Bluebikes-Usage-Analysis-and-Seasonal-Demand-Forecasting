@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8482fd5c119a8cb44cc992463dac9b03 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+             <h3 align="center" style="font-size:16px"><b>Top 10 popular rides from Northeastern stations</b></h3>
+             
+    
+            <div class="folium-map" id="map_8482fd5c119a8cb44cc992463dac9b03" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8482fd5c119a8cb44cc992463dac9b03 = L.map(
+                "map_8482fd5c119a8cb44cc992463dac9b03",
+                {
+                    center: [42.3398, -71.089],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d3cb5efd3f1f9cdb6a819d774d32b1d9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            var circle_marker_22ec1e8cd517722410093532482e862b = L.circleMarker(
+                [42.33624444796878, -71.08798563480377],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_22ec1e8cd517722410093532482e862b.bindTooltip(
+                `<div>
+                     Ruggles T Stop - Columbus Ave at Melnea Cass Blvd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b8cc3a8e121cbe423359a1930d945515 = L.circleMarker(
+                [42.331184, -71.095171],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_b8cc3a8e121cbe423359a1930d945515.bindTooltip(
+                `<div>
+                     Roxbury Crossing T Stop - Columbus Ave at Tremont St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d8d204c5db60c30066b4747a74c48951 = L.polyline(
+                [[42.33624444796878, -71.08798563480377], [42.331184, -71.095171]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            var circle_marker_49ad41a180baf77b2c5bb32403b31667 = L.circleMarker(
+                [42.33624444796878, -71.08798563480377],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_49ad41a180baf77b2c5bb32403b31667.bindTooltip(
+                `<div>
+                     Ruggles T Stop - Columbus Ave at Melnea Cass Blvd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4b52f398d2ffd60b314649a7359a525d = L.circleMarker(
+                [42.33624444796878, -71.08798563480377],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_4b52f398d2ffd60b314649a7359a525d.bindTooltip(
+                `<div>
+                     Ruggles T Stop - Columbus Ave at Melnea Cass Blvd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_578029c50f2ce4c916ac667539fcb991 = L.polyline(
+                [[42.33624444796878, -71.08798563480377], [42.33624444796878, -71.08798563480377]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            var circle_marker_a3a65aae34f813552fa0ec18cca70d3b = L.circleMarker(
+                [42.33624444796878, -71.08798563480377],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_a3a65aae34f813552fa0ec18cca70d3b.bindTooltip(
+                `<div>
+                     Ruggles T Stop - Columbus Ave at Melnea Cass Blvd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1a59481c9bacc8782524b49a79deab9d = L.circleMarker(
+                [42.32293117195949, -71.10014140605927],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_1a59481c9bacc8782524b49a79deab9d.bindTooltip(
+                `<div>
+                     Jackson Square T Stop
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e107fa76a7a6f8552902a23826dbf4e3 = L.polyline(
+                [[42.33624444796878, -71.08798563480377], [42.32293117195949, -71.10014140605927]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            var circle_marker_2fa5dd68213954ebb0ca23e024b7cc18 = L.circleMarker(
+                [42.33624444796878, -71.08798563480377],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_2fa5dd68213954ebb0ca23e024b7cc18.bindTooltip(
+                `<div>
+                     Ruggles T Stop - Columbus Ave at Melnea Cass Blvd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e0888929a89a5e809721e17e5b72aff0 = L.circleMarker(
+                [42.3436658245146, -71.08582377433777],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_e0888929a89a5e809721e17e5b72aff0.bindTooltip(
+                `<div>
+                     Christian Science Plaza - Massachusetts Ave at Westland Ave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9167541770664558a1990b6ae01f5bca = L.polyline(
+                [[42.33624444796878, -71.08798563480377], [42.3436658245146, -71.08582377433777]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            var circle_marker_b2b2721aae85aa863725603331c33646 = L.circleMarker(
+                [42.339202, -71.090511],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_b2b2721aae85aa863725603331c33646.bindTooltip(
+                `<div>
+                     Forsyth St at Huntington Ave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fd3de2c45fc4fe96795e00689ccf5d86 = L.circleMarker(
+                [42.33329254719182, -71.10124647617339],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_fd3de2c45fc4fe96795e00689ccf5d86.bindTooltip(
+                `<div>
+                     St. Alphonsus St at Tremont St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5acb0873e397ebc44fd07add92502e4d = L.polyline(
+                [[42.339202, -71.090511], [42.33329254719182, -71.10124647617339]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            var circle_marker_721e5e7606ffbfdb8b0c825d0ca11f60 = L.circleMarker(
+                [42.339202, -71.090511],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_721e5e7606ffbfdb8b0c825d0ca11f60.bindTooltip(
+                `<div>
+                     Forsyth St at Huntington Ave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fe8300b62f5730ea18479ec5089a4bd1 = L.circleMarker(
+                [42.331184, -71.095171],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_fe8300b62f5730ea18479ec5089a4bd1.bindTooltip(
+                `<div>
+                     Roxbury Crossing T Stop - Columbus Ave at Tremont St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_88cdae74e2eb00d790a1feef73141718 = L.polyline(
+                [[42.339202, -71.090511], [42.331184, -71.095171]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            var circle_marker_762f77ac2e8bdcadce64a00dacf9cde5 = L.circleMarker(
+                [42.33624444796878, -71.08798563480377],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_762f77ac2e8bdcadce64a00dacf9cde5.bindTooltip(
+                `<div>
+                     Ruggles T Stop - Columbus Ave at Melnea Cass Blvd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bd5e6ddebf2dc3bf5e7169d179243d3c = L.circleMarker(
+                [42.33392270136997, -71.10446508982932],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_bd5e6ddebf2dc3bf5e7169d179243d3c.bindTooltip(
+                `<div>
+                     One Brigham Circle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7a052f4f7b65f21244af0132f7684f97 = L.polyline(
+                [[42.33624444796878, -71.08798563480377], [42.33392270136997, -71.10446508982932]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            var circle_marker_fff2cc513c66f03a5e6eeae46760ba99 = L.circleMarker(
+                [42.33624444796878, -71.08798563480377],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_fff2cc513c66f03a5e6eeae46760ba99.bindTooltip(
+                `<div>
+                     Ruggles T Stop - Columbus Ave at Melnea Cass Blvd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8104208a077f8f114e2f75e570b3ea72 = L.circleMarker(
+                [42.3294633, -71.0901582],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_8104208a077f8f114e2f75e570b3ea72.bindTooltip(
+                `<div>
+                     Bartlett St at John Elliot Sq
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fe861536ee5ca3c6eeae6934c7bbc58c = L.polyline(
+                [[42.33624444796878, -71.08798563480377], [42.3294633, -71.0901582]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            var circle_marker_e584fce0374f88c88c799a46b1d1bcad = L.circleMarker(
+                [42.33624444796878, -71.08798563480377],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_e584fce0374f88c88c799a46b1d1bcad.bindTooltip(
+                `<div>
+                     Ruggles T Stop - Columbus Ave at Melnea Cass Blvd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bd34745d7d0f12271691e1c5de8a5a35 = L.circleMarker(
+                [42.34465062887831, -71.09732501226972],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_bd34745d7d0f12271691e1c5de8a5a35.bindTooltip(
+                `<div>
+                     Boylston St at Jersey St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b560b0838c39027423dabaa296564b57 = L.polyline(
+                [[42.33624444796878, -71.08798563480377], [42.34465062887831, -71.09732501226972]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            var circle_marker_3bb4115dbb1930002ed5ea4aa28072c5 = L.circleMarker(
+                [42.339202, -71.090511],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_3bb4115dbb1930002ed5ea4aa28072c5.bindTooltip(
+                `<div>
+                     Forsyth St at Huntington Ave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f930006c7ffafed48d6027ff65a1c29b = L.circleMarker(
+                [42.33462893055976, -71.10407917767589],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_f930006c7ffafed48d6027ff65a1c29b.bindTooltip(
+                `<div>
+                     Brigham Circle - Francis St at Huntington Ave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4fd77635a84fbc9db30fa6fcbf1d9728 = L.polyline(
+                [[42.339202, -71.090511], [42.33462893055976, -71.10407917767589]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            var circle_marker_85cff5d6d8125c83e828de64660f0edf = L.circleMarker(
+                [42.33624444796878, -71.08798563480377],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_85cff5d6d8125c83e828de64660f0edf.bindTooltip(
+                `<div>
+                     Ruggles T Stop - Columbus Ave at Melnea Cass Blvd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4284d21d25aa4a51b272ea409a0f6594 = L.circleMarker(
+                [42.34369055719748, -71.10235286881107],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_4284d21d25aa4a51b272ea409a0f6594.bindTooltip(
+                `<div>
+                     Landmark Center - Brookline Ave at Park Dr
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_79670d199e3b45ca0a09e5a297d8e2ce = L.polyline(
+                [[42.33624444796878, -71.08798563480377], [42.34369055719748, -71.10235286881107]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            var circle_marker_897c1434f665435e2991de71073ded14 = L.circleMarker(
+                [42.339202, -71.090511],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_897c1434f665435e2991de71073ded14.bindTooltip(
+                `<div>
+                     Forsyth St at Huntington Ave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4077c1f8fc83443e427ba461cc5cf259 = L.circleMarker(
+                [42.339202, -71.090511],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_4077c1f8fc83443e427ba461cc5cf259.bindTooltip(
+                `<div>
+                     Forsyth St at Huntington Ave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6f45ee8843d5989abe9c4418b3b55dd5 = L.polyline(
+                [[42.339202, -71.090511], [42.339202, -71.090511]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            var circle_marker_f5cba243d7634b222379f8a48b5c4205 = L.circleMarker(
+                [42.33624444796878, -71.08798563480377],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_f5cba243d7634b222379f8a48b5c4205.bindTooltip(
+                `<div>
+                     Ruggles T Stop - Columbus Ave at Melnea Cass Blvd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d79051e38b8ef477d0d0ed66921d3180 = L.circleMarker(
+                [42.316966, -71.104374],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_d79051e38b8ef477d0d0ed66921d3180.bindTooltip(
+                `<div>
+                     Stony Brook T Stop
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_59e1f5678d5e13680e78bf072b961480 = L.polyline(
+                [[42.33624444796878, -71.08798563480377], [42.316966, -71.104374]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            var circle_marker_7ab51cc9b01acc613d7a3ff9f7ee2435 = L.circleMarker(
+                [42.339202, -71.090511],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_7ab51cc9b01acc613d7a3ff9f7ee2435.bindTooltip(
+                `<div>
+                     Forsyth St at Huntington Ave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ca80e35c990247b6b8d58f60d0b3a9f7 = L.circleMarker(
+                [42.34465062887831, -71.09732501226972],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_ca80e35c990247b6b8d58f60d0b3a9f7.bindTooltip(
+                `<div>
+                     Boylston St at Jersey St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_14af771a1b8f8264a4763669a8d9cf37 = L.polyline(
+                [[42.339202, -71.090511], [42.34465062887831, -71.09732501226972]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            var circle_marker_33e41f7f1a2047881d08807966a1232c = L.circleMarker(
+                [42.33624444796878, -71.08798563480377],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_33e41f7f1a2047881d08807966a1232c.bindTooltip(
+                `<div>
+                     Ruggles T Stop - Columbus Ave at Melnea Cass Blvd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f668a8387553999a8fb099e354a46777 = L.circleMarker(
+                [42.336585554561154, -71.0988699646623],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_f668a8387553999a8fb099e354a46777.bindTooltip(
+                `<div>
+                     Huntington Ave at Mass Art
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_aa1ae5f92f271a719d23454d855920b8 = L.polyline(
+                [[42.33624444796878, -71.08798563480377], [42.336585554561154, -71.0988699646623]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            var circle_marker_1fce2f753b8d55d9e0070446ddcdf2ed = L.circleMarker(
+                [42.33889559644165, -71.08149975611013],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_1fce2f753b8d55d9e0070446ddcdf2ed.bindTooltip(
+                `<div>
+                     Tremont St at Northampton St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ac43a05ccd99901335ba919fb4f60c82 = L.circleMarker(
+                [42.3436658245146, -71.08582377433777],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_ac43a05ccd99901335ba919fb4f60c82.bindTooltip(
+                `<div>
+                     Christian Science Plaza - Massachusetts Ave at Westland Ave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d8b00eb70da1b91a1ac715d1635ace31 = L.polyline(
+                [[42.33889559644165, -71.08149975611013], [42.3436658245146, -71.08582377433777]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            var circle_marker_9df40e48b5b3f1e3feddf7a323a76da8 = L.circleMarker(
+                [42.33889559644165, -71.08149975611013],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_9df40e48b5b3f1e3feddf7a323a76da8.bindTooltip(
+                `<div>
+                     Tremont St at Northampton St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_85efd894837345d0396ed9e673ff6445 = L.circleMarker(
+                [42.33889559644165, -71.08149975611013],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_85efd894837345d0396ed9e673ff6445.bindTooltip(
+                `<div>
+                     Tremont St at Northampton St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d553892ca1c84dbff5f502216787ddd3 = L.polyline(
+                [[42.33889559644165, -71.08149975611013], [42.33889559644165, -71.08149975611013]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            var circle_marker_d3cc2c7c7251563cb88bde7b95f3da1d = L.circleMarker(
+                [42.339202, -71.090511],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_d3cc2c7c7251563cb88bde7b95f3da1d.bindTooltip(
+                `<div>
+                     Forsyth St at Huntington Ave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_97be029cb268c1fccc9679c83c3277aa = L.circleMarker(
+                [42.336585554561154, -71.0988699646623],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_97be029cb268c1fccc9679c83c3277aa.bindTooltip(
+                `<div>
+                     Huntington Ave at Mass Art
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ec940acf86a6a01b8d695da9d8aeedc6 = L.polyline(
+                [[42.339202, -71.090511], [42.336585554561154, -71.0988699646623]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            var circle_marker_684629ad1e7202e68c0f71297681dc73 = L.circleMarker(
+                [42.33624444796878, -71.08798563480377],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_684629ad1e7202e68c0f71297681dc73.bindTooltip(
+                `<div>
+                     Ruggles T Stop - Columbus Ave at Melnea Cass Blvd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_efd37bf5bafcca4faf6a862574c32d66 = L.circleMarker(
+                [42.332817, -71.081198],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_efd37bf5bafcca4faf6a862574c32d66.bindTooltip(
+                `<div>
+                     Washington St at Melnea Cass Blvd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d3dd5de2c55c5f4e297cb57f49af378b = L.polyline(
+                [[42.33624444796878, -71.08798563480377], [42.332817, -71.081198]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            var circle_marker_915f06231a64bd06fc3ce1c663076e1e = L.circleMarker(
+                [42.33889559644165, -71.08149975611013],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_915f06231a64bd06fc3ce1c663076e1e.bindTooltip(
+                `<div>
+                     Tremont St at Northampton St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4b17e667d07af4261b12be2b92ef3639 = L.circleMarker(
+                [42.33624444796878, -71.08798563480377],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+    
+            circle_marker_4b17e667d07af4261b12be2b92ef3639.bindTooltip(
+                `<div>
+                     Ruggles T Stop - Columbus Ave at Melnea Cass Blvd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0fbed8ca73fb75f6ad222d1ebd6a3ff8 = L.polyline(
+                [[42.33889559644165, -71.08149975611013], [42.33624444796878, -71.08798563480377]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_8482fd5c119a8cb44cc992463dac9b03);
+        
+</script>
+</html>

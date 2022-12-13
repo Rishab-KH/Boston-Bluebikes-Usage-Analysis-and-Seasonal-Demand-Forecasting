@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_214b4d7548754f764ef6838639fab3e6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+             <h3 align="center" style="font-size:16px"><b>Top 10 Blue Bikes Station in Boston</b></h3>
+             
+    
+            <div class="folium-map" id="map_214b4d7548754f764ef6838639fab3e6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_214b4d7548754f764ef6838639fab3e6 = L.map(
+                "map_214b4d7548754f764ef6838639fab3e6",
+                {
+                    center: [42.3398, -71.089],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fb5d683c766fb4f28359b64543176f7a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            var circle_389fbe195337a9a680f1f6857219ea6f = L.circle(
+                [42.3581, -71.093198],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 242.339, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_389fbe195337a9a680f1f6857219ea6f.bindTooltip(
+                `<div>
+                     ('MIT at Mass Ave / Amherst St', 242339)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d1aeb46c649b1b5b0b48ed200d21ec39 = L.circle(
+                [42.36507, -71.1031],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 202.169, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_d1aeb46c649b1b5b0b48ed200d21ec39.bindTooltip(
+                `<div>
+                     ('Central Square at Mass Ave / Essex St', 202169)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_cb0af79005a97aece353c47b65786aa6 = L.circle(
+                [42.373268, -71.118579],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 153.463, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_cb0af79005a97aece353c47b65786aa6.bindTooltip(
+                `<div>
+                     ('Harvard Square at Mass Ave/ Dunster', 153463)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d33e195731fe4a8adb389c4bf48c53b5 = L.circle(
+                [42.35957320109044, -71.10129475593567],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 132.261, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_d33e195731fe4a8adb389c4bf48c53b5.bindTooltip(
+                `<div>
+                     ('MIT Pacific St at Purrington St', 132261)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4279c34571dad6b41968918fb51e6b2a = L.circle(
+                [42.3625, -71.08822],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 131.896, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_4279c34571dad6b41968918fb51e6b2a.bindTooltip(
+                `<div>
+                     ('Ames St at Main St', 131896)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3142c1373bddd35bb521fc08c17623bf = L.circle(
+                [42.36079296858265, -71.07118962337152],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 129.311, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_3142c1373bddd35bb521fc08c17623bf.bindTooltip(
+                `<div>
+                     ('Charles Circle - Charles St at Cambridge St', 129311)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1135134fa6d22f4b6657901cf0d2e62f = L.circle(
+                [42.3436658245146, -71.08582377433777],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 124.128, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_1135134fa6d22f4b6657901cf0d2e62f.bindTooltip(
+                `<div>
+                     ('Christian Science Plaza - Massachusetts Ave at Westland Ave', 124128)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f231f85ee7fa26b35f0c73e20f594755 = L.circle(
+                [42.3621312344991, -71.09115600585936],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 123.51, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_f231f85ee7fa26b35f0c73e20f594755.bindTooltip(
+                `<div>
+                     ('MIT Stata Center at Vassar St / Main St', 123510)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c1dae8710909af8e9c452936a43d5865 = L.circle(
+                [42.35560121327927, -71.10394477844238],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 114.553, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_c1dae8710909af8e9c452936a43d5865.bindTooltip(
+                `<div>
+                     ('MIT Vassar St', 114553)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d6a9adc94af530660c98a1379b3b58c9 = L.circle(
+                [42.35082680669095, -71.0898108780384],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 105.763, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_d6a9adc94af530660c98a1379b3b58c9.bindTooltip(
+                `<div>
+                     ('Beacon St at Massachusetts Ave', 105763)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b6fd5c98585fa0b13906c3dc1ffb3383 = L.circle(
+                [42.35169201885973, -71.11903488636017],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 99.077, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_b6fd5c98585fa0b13906c3dc1ffb3383.bindTooltip(
+                `<div>
+                     ('Commonwealth Ave at Agganis Way', 99077)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0f31d1fe22de4bd61119dc7cfc847b57 = L.circle(
+                [42.352175, -71.055547],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 97.098, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_0f31d1fe22de4bd61119dc7cfc847b57.bindTooltip(
+                `<div>
+                     ('South Station - 700 Atlantic Ave', 97098)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e47548038cc2036045aab55b5283213c = L.circle(
+                [42.3624278429124, -71.08495473861694],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 96.932, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_e47548038cc2036045aab55b5283213c.bindTooltip(
+                `<div>
+                     ('Kendall T', 96932)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b22ffd6036e341cb312ae708aba2be56 = L.circle(
+                [42.34465062887831, -71.09732501226972],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 96.915, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_b22ffd6036e341cb312ae708aba2be56.bindTooltip(
+                `<div>
+                     ('Boylston St at Jersey St', 96915)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_40589449a072f6b967a16686760ca948 = L.circle(
+                [42.365673, -71.064263],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 94.092, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_40589449a072f6b967a16686760ca948.bindTooltip(
+                `<div>
+                     ('Nashua Street at Red Auerbach Way', 94092)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f495309c2d944de7b153af9f11b270de = L.circle(
+                [42.366426, -71.105495],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 92.781, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_f495309c2d944de7b153af9f11b270de.bindTooltip(
+                `<div>
+                     ('Central Sq Post Office / Cambridge City Hall at Mass Ave / Pleasant St', 92781)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5f730399beb48259115c2ac56892148b = L.circle(
+                [42.348717, -71.085954],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 90.882, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_5f730399beb48259115c2ac56892148b.bindTooltip(
+                `<div>
+                     ('Newbury St at Hereford St', 90882)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7bde955465e4f45ed7a27e4cd2c8afa6 = L.circle(
+                [42.36135837662249, -71.09670273977825],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 87.447, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_7bde955465e4f45ed7a27e4cd2c8afa6.bindTooltip(
+                `<div>
+                     ('Mass Ave at Albany St', 87447)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7a02787c42530f7060930b6ca8569ca8 = L.circle(
+                [42.352261, -71.123831],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 85.11, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_7a02787c42530f7060930b6ca8569ca8.bindTooltip(
+                `<div>
+                     ("Packard's Corner - Commonwealth Ave at Brighton Ave", 85110)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1b2570d5550fc9d58193e59576f5d344 = L.circle(
+                [42.362811, -71.056067],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 84.824, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_1b2570d5550fc9d58193e59576f5d344.bindTooltip(
+                `<div>
+                     ('Cross St at Hanover St', 84824)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b447eb98e65b665159a0f83eb249be79 = L.circle(
+                [42.357218503176526, -71.1138716340065],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 82.199, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_b447eb98e65b665159a0f83eb249be79.bindTooltip(
+                `<div>
+                     ('Lower Cambridgeport at Magazine St / Riverside Rd', 82199)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8b6a7e00a7f903743ab56b49cc0558b0 = L.circle(
+                [42.366277, -71.09169],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 81.394, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_8b6a7e00a7f903743ab56b49cc0558b0.bindTooltip(
+                `<div>
+                     ('One Kendall Square at Hampshire St / Portland St', 81394)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b9fd622480fb750c28f6a798698d524b = L.circle(
+                [42.338629, -71.1065],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80.425, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_b9fd622480fb750c28f6a798698d524b.bindTooltip(
+                `<div>
+                     ('Longwood Ave at Binney St', 80425)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7189525fddcdd94e978017dcf9580c36 = L.circle(
+                [42.33624444796878, -71.08798563480377],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80.415, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_7189525fddcdd94e978017dcf9580c36.bindTooltip(
+                `<div>
+                     ('Ruggles T Stop - Columbus Ave at Melnea Cass Blvd', 80415)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0bd7bcc0c830447571c3cbe615e064b0 = L.circle(
+                [42.35553628489709, -71.07286870479584],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 79.278, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_0bd7bcc0c830447571c3cbe615e064b0.bindTooltip(
+                `<div>
+                     ('Mugar Way at Beacon St', 79278)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_70df350effb6013818bd03d477c96d0e = L.circle(
+                [42.36346469304347, -71.10057324171066],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 78.689, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_70df350effb6013818bd03d477c96d0e.bindTooltip(
+                `<div>
+                     ('Lafayette Square at Mass Ave / Main St / Columbia St', 78689)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7d4d512fa7ff2b55fa3c70d50f1d55c5 = L.circle(
+                [42.34924376955301, -71.09728209692548],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 78.488, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_7d4d512fa7ff2b55fa3c70d50f1d55c5.bindTooltip(
+                `<div>
+                     ('Deerfield St at Commonwealth Ave', 78488)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1f6c19e8d71c63fc9468372432d65441 = L.circle(
+                [42.352409, -71.062679],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 74.276, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_1f6c19e8d71c63fc9468372432d65441.bindTooltip(
+                `<div>
+                     ('Chinatown T Stop', 74276)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b9d0d9a49bee131e6e36c8dd8bef3bb2 = L.circle(
+                [42.34740620525209, -71.08678414955648],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 74.203, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_b9d0d9a49bee131e6e36c8dd8bef3bb2.bindTooltip(
+                `<div>
+                     ('Boylston St at Massachusetts Ave', 74203)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b3eb906e5930a15fc54ef49a72029805 = L.circle(
+                [42.338514601786, -71.07404083013535],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 73.609, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_b3eb906e5930a15fc54ef49a72029805.bindTooltip(
+                `<div>
+                     ('Washington St at Rutland St', 73609)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_277683ea8cec81d19706044e4d0fb56a = L.circle(
+                [42.35317809186252, -71.04817356923377],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 73.545, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_277683ea8cec81d19706044e4d0fb56a.bindTooltip(
+                `<div>
+                     ('Seaport Blvd at Sleeper St', 73545)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3fa6c679f3a0ded2dc1e6d4ac27751d4 = L.circle(
+                [42.363871, -71.050877],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 72.808, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_3fa6c679f3a0ded2dc1e6d4ac27751d4.bindTooltip(
+                `<div>
+                     ('Lewis Wharf at Atlantic Ave', 72808)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_053b6c10c093376a8613ea7cad1ebefb = L.circle(
+                [42.36264779118595, -71.10006093978882],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 71.793, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_053b6c10c093376a8613ea7cad1ebefb.bindTooltip(
+                `<div>
+                     ('University Park', 71793)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6a6f7153f2e5fa2f3f81311a41b8a201 = L.circle(
+                [42.34369055719748, -71.10235286881107],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 70.633, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_6a6f7153f2e5fa2f3f81311a41b8a201.bindTooltip(
+                `<div>
+                     ('Landmark Center - Brookline Ave at Park Dr', 70633)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c557b119e4c9e89a61e7a2df4602355a = L.circle(
+                [42.35892, -71.057629],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 66.578, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_c557b119e4c9e89a61e7a2df4602355a.bindTooltip(
+                `<div>
+                     ('Boston City Hall - 28 State St', 66578)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_dac6cbac67fefc0c1d1f8331e95a1ab6 = L.circle(
+                [42.34807412317439, -71.07657015323639],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 66.146, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_dac6cbac67fefc0c1d1f8331e95a1ab6.bindTooltip(
+                `<div>
+                     ('Back Bay T Stop - Dartmouth St at Stuart St', 66146)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9987bb438adfe1bf8f32684f4ff7d93a = L.circle(
+                [42.348706, -71.097009],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 65.209, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_9987bb438adfe1bf8f32684f4ff7d93a.bindTooltip(
+                `<div>
+                     ('Kenmore Square', 65209)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7d622950b34668d686d1ff2a600ea701 = L.circle(
+                [42.34992828230057, -71.07739206866427],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 64.689, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_7d622950b34668d686d1ff2a600ea701.bindTooltip(
+                `<div>
+                     ('Copley Square - Dartmouth St at Boylston St', 64689)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ffb0bc6f7a62beb590c448a9e8b8bf98 = L.circle(
+                [42.36125721646537, -71.06528744101524],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 63.322, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_ffb0bc6f7a62beb590c448a9e8b8bf98.bindTooltip(
+                `<div>
+                     ('Cambridge St at Joy St', 63322)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a859112157941188bb54d14afd2b853a = L.circle(
+                [42.350406, -71.108279],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 63.245, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_a859112157941188bb54d14afd2b853a.bindTooltip(
+                `<div>
+                     ('B.U. Central - 725 Comm. Ave.', 63245)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c250cf82504a81c421366267a03c6017 = L.circle(
+                [42.35991176110118, -71.0514298081398],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 60.428, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_c250cf82504a81c421366267a03c6017.bindTooltip(
+                `<div>
+                     ('Aquarium T Stop - 200 Atlantic Ave', 60428)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_cc767992c6997c84923a67d5112d1860 = L.circle(
+                [42.35096144421219, -71.07782810926437],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 60.04, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_cc767992c6997c84923a67d5112d1860.bindTooltip(
+                `<div>
+                     ('Dartmouth St at Newbury St', 60040)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_caf5750dbdaa7a8ab46a500171a63da8 = L.circle(
+                [42.341598, -71.123338],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 59.901, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_caf5750dbdaa7a8ab46a500171a63da8.bindTooltip(
+                `<div>
+                     ('Coolidge Corner - Beacon St at Centre St', 59901)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9d3baeb8a2461692c0ad7177119eb1e3 = L.circle(
+                [42.370803, -71.104412],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 58.858, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_9d3baeb8a2461692c0ad7177119eb1e3.bindTooltip(
+                `<div>
+                     ('359 Broadway - Broadway at Fayette Street', 58858)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_99f006e27c93db024e08697a71562ef9 = L.circle(
+                [42.3722168027866, -71.12188071012497],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 57.815, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_99f006e27c93db024e08697a71562ef9.bindTooltip(
+                `<div>
+                     ('Harvard Kennedy School at Bennett St / Eliot St', 57815)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6043f21d3bc598494dd94c68a630d0e3 = L.circle(
+                [42.349589423682445, -71.0794677917329],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 57.49, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_6043f21d3bc598494dd94c68a630d0e3.bindTooltip(
+                `<div>
+                     ('Boylston St at Exeter St', 57490)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9aad461cd9974a0346ffbc9b67e433a0 = L.circle(
+                [42.35668334969929, -71.06166645884514],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 56.346, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_9aad461cd9974a0346ffbc9b67e433a0.bindTooltip(
+                `<div>
+                     ('Tremont St at Hamilton Pl', 56346)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5fb6a9ff833a97cbfbd3b6f7e6f702a6 = L.circle(
+                [42.3636929, -71.0875672],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 55.876, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_5fb6a9ff833a97cbfbd3b6f7e6f702a6.bindTooltip(
+                `<div>
+                     ('Ames St at Broadway', 55876)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_66722b49cd0c94620112422bfbadcc4c = L.circle(
+                [42.371848, -71.060292],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 55.628, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_66722b49cd0c94620112422bfbadcc4c.bindTooltip(
+                `<div>
+                     ('Warren St at Chelsea St', 55628)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_fb5483afd0b12b167e159f109b0bd589 = L.circle(
+                [42.363796, -71.129164],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 55.518, "stroke": true, "weight": 3}
+            ).addTo(map_214b4d7548754f764ef6838639fab3e6);
+        
+    
+            circle_fb5483afd0b12b167e159f109b0bd589.bindTooltip(
+                `<div>
+                     ('175 N Harvard St', 55518)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
