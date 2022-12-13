@@ -19,6 +19,9 @@ Start/End Station Latitude and Start/End Station Longitude: Coordinates of the d
               
 We have used ARIMA and LSTM models for seasonal demand forecasting. LSTM was able to give better predictions of  the total rides used from Northeastern University stations in each season.We observed that the fall season had the highest demand, followed by summer, spring and winter. 
 
+
+
+
 # Usage
 
 Please copy this link -> https://github.com/Rishab-KH/Boston-Bluebikes-Usage-Analysis-and-Seasonal-Demand-Forecasting_/blob/main/main.ipynb and copy this url to https://nbviewer.org/ for viewing all the interactive visualizations. 
