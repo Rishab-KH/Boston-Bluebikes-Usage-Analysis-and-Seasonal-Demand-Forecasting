@@ -25,7 +25,7 @@ We have used ARIMA and LSTM models for seasonal demand forecasting. LSTM was abl
 # Usage
 
 Please copy this link -> https://github.com/Rishab-KH/Boston-Bluebikes-Usage-Analysis-and-Seasonal-Demand-Forecasting_/blob/main/main.ipynb and copy this url to https://nbviewer.org/ for viewing all the interactive visualizations. 
-View the folium maps associated with this project, using this link -> https://rishab-kh.github.io/Boston-Bluebikes-Usage-Analysis-and-Seasonal-Demand-Forecasting_/
+
  
 
 # References
